@@ -108,6 +108,8 @@ export default {
 
 
     getIceServer() {
+
+        console.log("getIceServer")        ;
         return {
             iceServers: [
                 {
