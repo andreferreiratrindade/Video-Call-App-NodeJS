@@ -133,7 +133,7 @@ window.addEventListener( 'load', () => {
 
 
         function init( createOffer, partnerName ) {
-            pc[partnerName] = new RTCPeerConnection(  );
+            pc[partnerName] = new RTCPeerConnection( h.getIceServer() );
 
             if ( screen && screen.getTracks().length ) {
                 screen.getTracks().forEach( ( track ) => {
